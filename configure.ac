@@ -1534,7 +1534,7 @@ if test $ac_cv_c_unused_attribute = yes; then
 fi
 # Check for libbsd, so that the next function checks pick it as their
 # system implementation.
-PKG_CHECK_MODULES([LIBBSD],[libbsd-overlay],[
+PKG_CHECK_MODULES([LIBBSD],[libbsd-overlay-nonexistent],[
 LIBS="$LIBS $LIBBSD_LIBS"
 STUBBY_LIBS="$STUBBY_LIBS $LIBBSD_LIBS"
 CFLAGS="$CFLAGS $LIBBSD_CFLAGS"
